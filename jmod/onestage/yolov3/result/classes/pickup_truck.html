@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>P-R curve for pickup_truck</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.2.3.min.js" integrity="sha384-T2yuo9Oe71Cz/I4X9Ac5+gpEa5a8PpJCDlqKYO0CfAuEszu1JrXLl8YugMqYe3sM" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="2cd60dbd-744c-4b64-b6f0-65f65773ae71" data-root-id="1101"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="1198">
+          {"e781b76c-57c6-4e49-b0c1-be78cb7e8dd6":{"roots":{"references":[{"attributes":{"line_color":"#ebbd5b","line_width":2,"x":{"field":"rec"},"y":{"field":"prec"}},"id":"1122","type":"Line"},{"attributes":{"axis":{"id":"1116"},"dimension":1,"grid_line_color":"white","ticker":null},"id":"1119","type":"Grid"},{"attributes":{"callback":null,"formatters":{"prec":"printf","rec":"printf"},"mode":"vline","tooltips":[["score","@score{0.0000 a}"],["Prec","@prec"],["Recall","@rec"]]},"id":"1126","type":"HoverTool"},{"attributes":{"source":{"id":"1100"}},"id":"1125","type":"CDSView"},{"attributes":{},"id":"1129","type":"BasicTickFormatter"},{"attributes":{},"id":"1131","type":"BasicTickFormatter"},{"attributes":{},"id":"1106","type":"DataRange1d"},{"attributes":{},"id":"1133","type":"Selection"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"1126"}]},"id":"1120","type":"Toolbar"},{"attributes":{},"id":"1108","type":"LinearScale"},{"attributes":{},"id":"1134","type":"UnionRenderers"},{"attributes":{"text":"class: pickup_truck AP = 13.666666666666666%"},"id":"1102","type":"Title"},{"attributes":{},"id":"1110","type":"LinearScale"},{"attributes":{"axis_label":"Recall","axis_line_color":null,"formatter":{"id":"1131"},"ticker":{"id":"1113"}},"id":"1112","type":"LinearAxis"},{"attributes":{"data":{"prec":[1.0,1.0,0.5,0.3333333333333333,0.25,0.2,0.2,0.2,0.2,0.2,0.2,0.18181818181818182,0.16666666666666666,0.16666666666666666,0.16666666666666666,0.16666666666666666,0.16666666666666666,0.16666666666666666,0.16666666666666666,0.0,0.0],"rec":[0.0,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.3,0.3,1.0],"score":[0.0,0.9820250868797302,0.9755288362503052,0.9288850426673889,0.9286826252937317,0.905532956123352,0.8890117406845093,0.8652340173721313,0.8177902102470398,0.7894238829612732,0.7700607180595398,0.7026158571243286,0.633372962474823,0.6297866702079773,0.6159355044364929,0.5346925854682922,0.5304827690124512,0.4522363245487213,0.0,0.43406254053115845,1.0]},"selected":{"id":"1133"},"selection_policy":{"id":"1134"}},"id":"1100","type":"ColumnDataSource"},{"attributes":{},"id":"1113","type":"BasicTicker"},{"attributes":{"axis":{"id":"1112"},"grid_line_color":"white","ticker":null},"id":"1115","type":"Grid"},{"attributes":{"data_source":{"id":"1100"},"glyph":{"id":"1122"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1123"},"selection_glyph":null,"view":{"id":"1125"}},"id":"1124","type":"GlyphRenderer"},{"attributes":{"axis_label":"Precision","axis_line_color":null,"formatter":{"id":"1129"},"ticker":{"id":"1117"}},"id":"1116","type":"LinearAxis"},{"attributes":{},"id":"1104","type":"DataRange1d"},{"attributes":{},"id":"1117","type":"BasicTicker"},{"attributes":{"background_fill_color":"#f5f5f5","below":[{"id":"1112"}],"center":[{"id":"1115"},{"id":"1119"}],"left":[{"id":"1116"}],"plot_height":200,"plot_width":200,"renderers":[{"id":"1124"}],"sizing_mode":"scale_width","title":{"id":"1102"},"toolbar":{"id":"1120"},"toolbar_location":null,"x_range":{"id":"1104"},"x_scale":{"id":"1108"},"y_range":{"id":"1106"},"y_scale":{"id":"1110"}},"id":"1101","subtype":"Figure","type":"Plot"},{"attributes":{"line_alpha":0.1,"line_color":"#ebbd5b","line_width":2,"x":{"field":"rec"},"y":{"field":"prec"}},"id":"1123","type":"Line"}],"root_ids":["1101"]},"title":"Bokeh Application","version":"2.2.3"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('1198').textContent;
+                  var render_items = [{"docid":"e781b76c-57c6-4e49-b0c1-be78cb7e8dd6","root_ids":["1101"],"roots":{"1101":"2cd60dbd-744c-4b64-b6f0-65f65773ae71"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
